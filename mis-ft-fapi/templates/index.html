@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mistral Chat</title>
+</head>
+<body>
+    <h2>Ask the Mistral Bot</h2>
+    <form method="post">
+        <textarea name="user_input" rows="4" cols="60">{{ user_input }}</textarea><br>
+        <button type="submit">Ask</button>
+    </form>
+    {% if response %}
+        <h3>Response:</h3>
+        <div style="white-space: pre-line;">{{ response }}</div>
+    {% endif %}
+</body>
+</html>
